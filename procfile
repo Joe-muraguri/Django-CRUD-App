@@ -1,3 +1,1 @@
-web: python manage.py migrate && python manage.py collectstatic && gunicorn students.wsgi
-
-#web: gunicorn 'students.wsgi'
+web: gunicorn studentmanagement.wsgi --log-file
